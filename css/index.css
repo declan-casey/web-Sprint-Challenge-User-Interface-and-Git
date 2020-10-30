@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 1px solid black; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -26,8 +26,30 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: flex;
 }
+
+ header{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+ }
+
+ .navbar{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+ .navbar a{ 
+    margin-left:15%;
+    margin-right: 18%;
+    margin-top: 8%;
+    margin-bottom: 12%;
+    color: black;
+    text-decoration: none;
+}
+
+
 body {
 	line-height: 1;
 }
@@ -88,6 +110,8 @@ p {
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    display: flex;
+    flex-direction: column;
 }
 
 .middle-content h2 {
@@ -104,12 +128,12 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .bottom-content {
@@ -143,4 +167,35 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+div .box1{
+    background: teal;
+}
+div .box2{
+    background:gold;
+}
+div .box3{
+    background: cadetblue;
+}
+div .box4{
+    background: coral;
+}
+div .box5{
+    background: crimson;
+}
+div .box6{
+    background: forestgreen;
+}
+div .box7{
+    background: darkorchid;
+}
+div .box8{
+    background: hotpink;
+}
+div .box9{
+    background: indigo;
+}
+div .box10{
+    background:dodgerblue;
 }
