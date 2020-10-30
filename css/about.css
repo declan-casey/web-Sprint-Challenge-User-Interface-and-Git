@@ -14,7 +14,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	 border: 1px solid black; 
+	 /* border: 1px solid black;  */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -26,25 +26,71 @@ time, mark, audio, video {
      align-self: center; 
 }
 
+
+h2{
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#about{
+   margin-left: 2%;
+   border-bottom: dotted 2px darkslategray;
+   padding-bottom: 1.5rem;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
 header{
     display:flex;
     flex-direction: row;
-    justify-content: flex-start; 
+    
  }
 
  .navbar{
      display: flex;
      flex-direction: row;
+     justify-content: flex-end;
      justify-content: space-between;
  }
 
  .navbar a{ 
-    margin-left:15%;
-    margin-right: 18%;
-    margin-top: 8%;
-    margin-bottom: 12%;
+    margin-left: 32%;
     color: black;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.imgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content:center;
+    margin-top: 2rem;
+}
+
+.imgs div{
+    max-width: 45%;
+    border-bottom: darkslategrey dotted 4px;
+    margin-bottom:1rem ;
+}
+
+div h3{
+    font-size: x-large;
+    margin-bottom: .4rem;
+}
+
+div button{
+    border-radius: 10%;
+    padding:.4rem;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+
 }
 
 footer {
@@ -64,4 +110,12 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.work h2{
+    font-size: x-large;
+}
+
+.work{
+    margin-bottom: 1.5rem;
 }
